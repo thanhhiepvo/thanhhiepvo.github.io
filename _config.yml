@@ -1,0 +1,61 @@
+# _config.yml for GitHub Portfolio
+
+# Basic Information
+name: "Thanh Hiep Vo"
+title: "Computer Science Student | Researcher in CNN & XAI"
+email: "vthiep21@clc.fitus.edu.vn"
+phone: "+84 702.463.265"
+description: >-
+  Passionate Computer Science student specializing in Convolutional Neural Networks (CNN) and Explainable AI (XAI).
+  Skilled in Python, C++, PyTorch, and Machine Learning frameworks with hands-on experience in research and projects.
+
+# Social Links
+github: "https://github.com/yourusername"
+linkedin: "https://www.linkedin.com/in/yourprofile"
+email_contact: "mailto:vthiep21@clc.fitus.edu.vn"
+
+# Education
+education:
+  degree: "B.S. in Information Technology"
+  university: "VNUHCM - University of Science, Ho Chi Minh City"
+  gpa: "3.45/4.00"
+  duration: "Oct 2021 – Present"
+  coursework:
+    - Introduction to Machine Learning
+    - Data Mining and Applications
+    - Fundamentals of AI
+    - Pattern Recognition
+    - Introduction to Big Data
+    - NLP and Applications
+
+# Research Interests
+research:
+  - "Counterfactual Explanations for Tabular Data using NSGA-II"
+  - "Local Model-Agnostic Methods in Explainable AI"
+  - "Convolutional Neural Networks for Image Classification"
+
+# Skills
+skills:
+  programming_languages: ["Python", "C/C++", "Julia", "Java"]
+  frameworks: ["PyTorch"]
+  libraries: ["Matplotlib", "Pandas", "NumPy", "Scikit-learn"]
+  tools: ["LaTeX", "SQL", "Git"]
+  languages: ["English (IELTS 6.0)", "Vietnamese (Native)"]
+
+# Projects
+projects:
+  - name: "MedCare: AI-based Web App"
+    description: "Chatbot web application for diagnosing based on text descriptions using OpenAI API."
+    tools: ["Python", "Machine Learning"]
+    link: "https://github.com/yourusername/medcare"
+
+# Theme Settings
+theme: "jekyll-theme-minimal"
+show_downloads: true
+github_profile: true
+
+# Analytics (Optional)
+google_analytics: UA-XXXXXXX-X
+
+# Footer
+footer: "© 2024 Thanh Hiep Vo | All Rights Reserved."

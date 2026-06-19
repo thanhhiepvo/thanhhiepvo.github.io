@@ -1,61 +1,45 @@
-# _config.yml for GitHub Portfolio
+# _config.yml for GitHub Pages portfolio
 
-# Basic Information
 name: "Thanh Hiep Vo"
-title: "Computer Science Student | Researcher in CNN & XAI"
-email: "vthiep21@clc.fitus.edu.vn"
+title: "Computer Science Student | AI & Deep Learning"
+email: "thanhhiepvos@gmail.com"
 phone: "+84 702.463.265"
 description: >-
-  Passionate Computer Science student specializing in Convolutional Neural Networks (CNN) and Explainable AI (XAI).
-  Skilled in Python, C++, PyTorch, and Machine Learning frameworks with hands-on experience in research and projects.
+  Computer Science student specializing in LLMs, RAG, computer vision, and explainable AI.
+  Experience in research (Queen's University Belfast) and industry (FPT Software, VinUniversity).
 
-# Social Links
-github: "https://github.com/yourusername"
-linkedin: "https://www.linkedin.com/in/yourprofile"
-email_contact: "mailto:vthiep21@clc.fitus.edu.vn"
+github: "https://github.com/thanhhiepvo"
+email_contact: "mailto:thanhhiepvos@gmail.com"
 
-# Education
 education:
-  degree: "B.S. in Information Technology"
+  degree: "B.S. in Information Technology (Computer Science)"
   university: "VNUHCM - University of Science, Ho Chi Minh City"
-  gpa: "3.45/4.00"
-  duration: "Oct 2021 – Present"
-  coursework:
-    - Introduction to Machine Learning
-    - Data Mining and Applications
-    - Fundamentals of AI
-    - Pattern Recognition
-    - Introduction to Big Data
-    - NLP and Applications
+  gpa: "3.49/4.00"
+  duration: "Oct 2021 – Apr 2026"
+  thesis: "Building Ontology-based Constraints for Large Language Models"
 
-# Research Interests
 research:
-  - "Counterfactual Explanations for Tabular Data using NSGA-II"
-  - "Local Model-Agnostic Methods in Explainable AI"
-  - "Convolutional Neural Networks for Image Classification"
+  - "Ontology-based constraints for large language models"
+  - "Retrieval-Augmented Generation (RAG) for legal and domain-specific text"
+  - "Convolutional Neural Networks and Vision Transformers for image classification"
 
-# Skills
 skills:
   programming_languages: ["Python", "C/C++", "Julia", "Java"]
-  frameworks: ["PyTorch"]
-  libraries: ["Matplotlib", "Pandas", "NumPy", "Scikit-learn"]
-  tools: ["LaTeX", "SQL", "Git"]
+  frameworks: ["PyTorch", "Streamlit", "LangChain", "FastAPI"]
+  libraries: ["NumPy", "Pandas", "Scikit-learn", "OpenCV", "Keras", "TensorFlow"]
+  tools: ["Docker", "AWS", "LaTeX", "SQL", "Git"]
   languages: ["English (IELTS 6.0)", "Vietnamese (Native)"]
 
-# Projects
 projects:
   - name: "MedCare: AI-based Web App"
-    description: "Chatbot web application for diagnosing based on text descriptions using OpenAI API."
-    tools: ["Python", "Machine Learning"]
-    link: "https://github.com/yourusername/medcare"
+    description: "Chatbot web application for medical diagnosis based on text descriptions using OpenAI API."
+    tools: ["Python", "OpenAI API"]
+  - name: "Object Detection on Vietnamese Traffic Signs"
+    description: "Fine-tuned Faster R-CNN, YOLOv12, FCOS, RetinaNet, and SSD300."
+    tools: ["PyTorch", "Computer Vision"]
 
-# Theme Settings
-theme: "jekyll-theme-minimal"
-show_downloads: true
+theme: jekyll-theme-minimal
+show_downloads: false
 github_profile: true
 
-# Analytics (Optional)
-google_analytics: UA-XXXXXXX-X
-
-# Footer
-footer: "© 2024 Thanh Hiep Vo | All Rights Reserved."
+footer: "© 2026 Thanh Hiep Vo"

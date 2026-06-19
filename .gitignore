@@ -1,0 +1,6 @@
+.DS_Store
+*.swp
+*~
+
+# Keep resume local — not published to GitHub Pages
+Resume.pdf

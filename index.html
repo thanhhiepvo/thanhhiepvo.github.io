@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Thanh Hiep Vo — Computer Science student specializing in AI, LLMs, and deep learning.">
+  <title>Thanh Hiep Vo</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #5c6370;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1117;
+        --card: #171a21;
+        --text: #f3f4f6;
+        --muted: #9ca3af;
+        --accent: #60a5fa;
+        --border: #2d333b;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      width: min(640px, 100%);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.35rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .summary {
+      margin-bottom: 1.75rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.65rem 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    a.button:hover {
+      transform: translateY(-1px);
+    }
+
+    a.primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    a.secondary {
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+    }
+
+    li a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 1.75rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Thanh Hiep Vo</h1>
+    <p class="subtitle">Computer Science · AI &amp; Deep Learning</p>
+
+    <p class="summary">
+      B.S. Information Technology student at VNUHCM – University of Science, with experience in
+      LLMs, RAG, computer vision, and applied AI engineering. Currently an Agentic AI Resident at VinUniversity.
+    </p>
+
+    <div class="actions">
+      <a class="button primary" href="https://github.com/thanhhiepvo" target="_blank" rel="noopener noreferrer">View GitHub Profile</a>
+    </div>
+
+    <ul>
+      <li><a href="mailto:thanhhiepvos@gmail.com">thanhhiepvos@gmail.com</a></li>
+      <li><a href="https://github.com/thanhhiepvo" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://huggingface.co/thanhhiepvos" target="_blank" rel="noopener noreferrer">Hugging Face</a></li>
+    </ul>
+
+    <footer>© 2026 Thanh Hiep Vo</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+experiences:
+  - place: "VinUniversity"
+    time: "May 2026 – Present"
+    title: "Agentic AI Resident"
+    subtitle: "Hanoi, Vietnam"
+    category: "work"
+
+  - place: "AI VIETNAM"
+    time: "Jun 2025 – May 2026"
+    title: "AI Resident (AIO2025)"
+    subtitle: "Part-time"
+    category: "work"
+
+  - place: "FPT Software"
+    time: "Jan 2026 – Mar 2026"
+    title: "AI Engineer Intern"
+    subtitle: "Ho Chi Minh City, Vietnam"
+    category: "work"
+
+  - place: "Queen's University Belfast (EEECS)"
+    time: "Aug 2025 – Nov 2025"
+    title: "Visiting Research Student"
+    subtitle: "Belfast, Northern Ireland"
+    advisor: "Prof. Hui Wang, Dr. Thai-Son Mai, and Dr. Zheng Li"
+    category: "work"
+
+  - place: "Queen's University Belfast (EEECS)"
+    time: "Apr 2025 – Aug 2025"
+    title: "Research Assistant"
+    subtitle: "Belfast, Northern Ireland"
+    category: "work"
+
+  - place: "VNUHCM – University of Science"
+    time: "Oct 2021 – Apr 2026"
+    title: "B.S. Student"
+    subtitle: "Information Technology · Computer Science · CGPA 3.49/4.00"
+    advisor: "Dr. Tien-Len Bui"
+    category: "school"

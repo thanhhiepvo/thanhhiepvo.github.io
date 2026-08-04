@@ -1,45 +1,19 @@
-# _config.yml for GitHub Pages portfolio
+source: .
+destination: ./_site
 
-name: "Thanh Hiep Vo"
-title: "Computer Science Student | AI & Deep Learning"
-email: "thanhhiepvos@gmail.com"
-phone: "+84 702.463.265"
-description: >-
-  Computer Science student specializing in LLMs, RAG, computer vision, and explainable AI.
-  Experience in research (Queen's University Belfast) and industry (FPT Software, VinUniversity).
+domain: thanhhiepvo.github.io
+url: https://thanhhiepvo.github.io
 
-github: "https://github.com/thanhhiepvo"
-email_contact: "mailto:thanhhiepvos@gmail.com"
+version: 1.0.0
 
-education:
-  degree: "B.S. in Information Technology (Computer Science)"
-  university: "VNUHCM - University of Science, Ho Chi Minh City"
-  gpa: "3.49/4.00"
-  duration: "Oct 2021 – Apr 2026"
-  thesis: "Building Ontology-based Constraints for Large Language Models"
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
 
-research:
-  - "Ontology-based constraints for large language models"
-  - "Retrieval-Augmented Generation (RAG) for legal and domain-specific text"
-  - "Convolutional Neural Networks and Vision Transformers for image classification"
-
-skills:
-  programming_languages: ["Python", "C/C++", "Julia", "Java"]
-  frameworks: ["PyTorch", "Streamlit", "LangChain", "FastAPI"]
-  libraries: ["NumPy", "Pandas", "Scikit-learn", "OpenCV", "Keras", "TensorFlow"]
-  tools: ["Docker", "AWS", "LaTeX", "SQL", "Git"]
-  languages: ["English (IELTS 6.0)", "Vietnamese (Native)"]
-
-projects:
-  - name: "MedCare: AI-based Web App"
-    description: "Chatbot web application for medical diagnosis based on text descriptions using OpenAI API."
-    tools: ["Python", "OpenAI API"]
-  - name: "Object Detection on Vietnamese Traffic Signs"
-    description: "Fine-tuned Faster R-CNN, YOLOv12, FCOS, RetinaNet, and SSD300."
-    tools: ["PyTorch", "Computer Vision"]
-
-theme: jekyll-theme-minimal
-show_downloads: false
-github_profile: true
-
-footer: "© 2026 Thanh Hiep Vo"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Resume.pdf
+  - vendor

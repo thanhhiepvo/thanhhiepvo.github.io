@@ -1,154 +1,233 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Thanh Hiep Vo — Computer Science student specializing in AI, LLMs, and deep learning.">
-  <title>Thanh Hiep Vo</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f6f7f9;
-      --card: #ffffff;
-      --text: #1a1a1a;
-      --muted: #5c6370;
-      --accent: #2563eb;
-      --border: #e5e7eb;
-    }
+---
+layout: default
+title: Home
+---
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0f1117;
-        --card: #171a21;
-        --text: #f3f4f6;
-        --muted: #9ca3af;
-        --accent: #60a5fa;
-        --border: #2d333b;
-      }
-    }
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+    I hold a B.S. in <b>Information Technology</b> (Computer Science) from
+    <a href="https://hcmus.edu.vn/" target="_blank" rel="noopener noreferrer">VNUHCM – University of Science</a>,
+    completed in April 2026. My undergraduate thesis, on ontology-based constraints for large
+    language models, was advised by <b>Dr. Tien-Len Bui</b>.
+  </p>
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <p>
+    I am broadly interested in <b>large language models</b>, <b>retrieval-augmented generation (RAG)</b>,
+    and <b>computer vision</b>. My recent work spans ontology-guided prompt engineering, parameter-efficient
+    fine-tuning (PEFT), and building production AI systems with vector and graph databases.
+  </p>
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 1rem;
-    }
+  <p>
+    I am currently an <b>Agentic AI Resident</b> at VinUniversity. Previously I interned as an
+    AI Engineer at FPT Software and spent 2025 at <b>Queen's University Belfast</b>, first as a
+    Research Assistant and then as a Visiting Research Student.
+    I am always open to collaborations and discussions. Feel free to reach out via email!
+  </p>
+</div>
 
-    main {
-      width: min(640px, 100%);
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 2.5rem 2rem;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-    }
+<!-- ========== NEWS ========== -->
+<div class="docs-section" id="news">
+  <h4>News</h4>
+  <ul style="list-style-type: none; padding: 2px; overflow-y: scroll; height: 250px;">
+    <li><b>[05/2026]</b> Started as <b>Agentic AI Resident</b> at VinUniversity, Hanoi.</li>
+    <li><b>[04/2026]</b> Completed undergraduate thesis <a href="#selected-Thesis2026" onclick="switchToSelectedTab()">Building Ontology-based Constraints for Large Language Models</a> with grade <b>9.5/10</b>.</li>
+    <li><b>[03/2026]</b> Completed <b>AI Engineer Internship</b> at FPT Software — built code-quality and document Q&amp;A chatbots with Qdrant and Neo4j.</li>
+    <li><b>[08/2025]</b> Joined <b>Queen's University Belfast</b> as a Visiting Research Student, working on ontology-guided LLMs and RAG pipelines.</li>
+    <li><b>[06/2025]</b> Joined <b>AI VIETNAM (AIO2025)</b> as an AI Resident.</li>
+    <li><b>[04/2025]</b> Began as <b>Research Assistant</b> at QUB — LLM guardrails and PEFT on Hugging Face models.</li>
+    <li><b>[2025]</b> Earned <b>AWS Certified Cloud Practitioner</b> certification.</li>
+  </ul>
+</div>
 
-    h1 {
-      font-size: 2rem;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.35rem;
-    }
+<!-- ========== RESEARCH ========== -->
+<div class="docs-section" id="research">
+  <h4>Research</h4>
 
-    .subtitle {
-      color: var(--muted);
-      font-size: 1.05rem;
-      margin-bottom: 1.25rem;
-    }
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+  </ul>
 
-    .summary {
-      margin-bottom: 1.75rem;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 1.75rem;
-    }
-
-    a.button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.65rem 1.1rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: transform 0.15s ease, opacity 0.15s ease;
-    }
-
-    a.button:hover {
-      transform: translateY(-1px);
-    }
-
-    a.primary {
-      background: var(--accent);
-      color: #fff;
-    }
-
-    a.secondary {
-      border: 1px solid var(--border);
-      color: var(--text);
-    }
-
-    ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 1rem;
-    }
-
-    li a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    li a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 1.75rem;
-      padding-top: 1.25rem;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.875rem;
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>Thanh Hiep Vo</h1>
-    <p class="subtitle">Computer Science · AI &amp; Deep Learning</p>
-
-    <p class="summary">
-      B.S. Information Technology student at VNUHCM – University of Science, with experience in
-      LLMs, RAG, computer vision, and applied AI engineering. Currently an Agentic AI Resident at VinUniversity.
-    </p>
-
-    <div class="actions">
-      <a class="button primary" href="https://github.com/thanhhiepvo" target="_blank" rel="noopener noreferrer">View GitHub Profile</a>
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+      {% for paper in selected_papers %}
+        <span class="anchor" id="selected-{{ paper.id }}"></span>
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+        </div>
+      {% endfor %}
     </div>
 
-    <ul>
-      <li><a href="mailto:thanhhiepvos@gmail.com">thanhhiepvos@gmail.com</a></li>
-      <li><a href="https://github.com/thanhhiepvo" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-      <li><a href="https://huggingface.co/thanhhiepvos" target="_blank" rel="noopener noreferrer">Hugging Face</a></li>
-    </ul>
+    <div class="tab-pane" id="papers-all">
+      {% for paper in site.data.publications.papers %}
+        <span class="anchor" id="all-{{ paper.id }}"></span>
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 
-    <footer>© 2026 Thanh Hiep Vo</footer>
-  </main>
-</body>
-</html>
+<!-- ========== PROJECTS ========== -->
+<div class="docs-section" id="projects">
+  <h4>Projects</h4>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
+    <li><div class="button" data-ref="#projects-all">All</div></li>
+  </ul>
+
+  {% assign all_projects = site.projects | sort: "order" %}
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="projects-selected">
+      {% assign selected_projects = all_projects | where: "selected", "y" %}
+      {% for project in selected_projects %}
+        <div class="paper">
+          <p class="title"><b><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></b></p>
+          <p>{{ project.subtitle }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane" id="projects-all">
+      {% for project in all_projects %}
+        <div class="paper">
+          <p class="title"><b><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></b></p>
+          <p>{{ project.subtitle }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- ========== OPEN-SOURCE PROJECTS ========== -->
+<div class="docs-section" id="opensource">
+  <h4>Open-Source Projects</h4>
+
+  <div class="opensource-project">
+    <div class="project-content">
+      <div class="project-info">
+        <h3 class="project-title">
+          <a href="https://github.com/thanhhiepvo" target="_blank" rel="noopener noreferrer" class="project-link">GitHub — thanhhiepvo</a>
+        </h3>
+        <div class="github-stats">
+          <div class="stat-badge">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <span class="stat-label">Public Repos</span>
+            <span class="stat-value" id="repos-count">-</span>
+          </div>
+        </div>
+        <div class="project-description">
+          <p>
+            Open-source work across machine learning, data pipelines, cloud infrastructure, and AI engineering labs.
+            Highlights include computer vision experiments, LLM/RAG tooling, and VinUni AI residency projects.
+          </p>
+          <p>
+            <em>Also on <a href="https://huggingface.co/thanhhiepvos" target="_blank" rel="noopener noreferrer">Hugging Face</a>.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== CV (no public PDF) ========== -->
+<div class="docs-section" id="resume">
+  <h4>CV</h4>
+
+  <p>Experience and education timeline. Resume available on request.</p>
+
+  <ul class="timeline">
+    {% for exp in site.data.experience.experiences %}
+    <li>
+      {% if exp.category == "work" %}
+      <div class="direction-l">
+      {% else %}
+      <div class="direction-r">
+      {% endif %}
+        <div class="flag-wrapper">
+          <span class="flag flag-with-layout {% if exp.category == 'work' %}flag-direction-l{% else %}flag-direction-r{% endif %}">
+            <span class="flag-text">{{ exp.place }}</span>
+          </span>
+          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+        </div>
+        {% if exp.advisor %}
+          <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }} <br/> Advisor: {{ exp.advisor }}</div>
+        {% else %}
+          <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!-- ========== SKILLS ========== -->
+<div class="docs-section" id="skills">
+  <h4>Skills</h4>
+
+  <p style="margin-bottom: 5px;"><b>Programming Languages</b></p>
+  <p>Python, C/C++, Julia, Java</p>
+
+  <p style="margin-bottom: 5px; margin-top: 15px;"><b>Frameworks &amp; Platforms</b></p>
+  <p>PyTorch, Streamlit, LangChain, FastAPI, Docker, AWS</p>
+
+  <p style="margin-bottom: 5px; margin-top: 15px;"><b>Libraries</b></p>
+  <p>NumPy, Pandas, Scikit-learn, OpenCV, Keras, TensorFlow, Matplotlib</p>
+
+  <p style="margin-bottom: 5px; margin-top: 15px;"><b>Other</b></p>
+  <p>LaTeX, SQL, Git</p>
+
+  <p style="margin-bottom: 5px; margin-top: 15px;"><b>Languages</b></p>
+  <p>English (IELTS 6.0), Vietnamese (native)</p>
+
+  <p style="margin-bottom: 5px; margin-top: 15px;"><b>Certifications</b></p>
+  <ul style="margin-top: 0;">
+    <li>AWS Certified Cloud Practitioner</li>
+  </ul>
+</div>
+
+<div class="docs-section" id="acknowledgement">
+  <h4>Acknowledgement</h4>
+  The website was built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> and designed by
+  <a href="https://faculty.washington.edu/msaveski/" target="_blank" rel="noopener noreferrer">Martin Saveski</a>.
+  Layout inspiration from <a href="https://quang-truong.github.io/" target="_blank" rel="noopener noreferrer">Quang Truong</a>.
+</div>
+
+<script>
+  async function fetchGitHubStats() {
+    try {
+      const response = await fetch('https://api.github.com/users/thanhhiepvo');
+      if (response.ok) {
+        const data = await response.json();
+        document.getElementById('repos-count').textContent = data.public_repos;
+      }
+    } catch (error) {
+      console.error('Error fetching GitHub stats:', error);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    fetchGitHubStats();
+  });
+
+  // Called from the News section so that deep links to a selected paper's anchor
+  // land on the Selected tab even if the visitor is currently viewing All.
+  function switchToSelectedTab() {
+    var activeTab = document.querySelector('#research .tab-pane.active');
+    if (activeTab) activeTab.classList.remove('active');
+    var activeButton = document.querySelector('#research .tab-nav .button.active');
+    if (activeButton) activeButton.classList.remove('active');
+    document.getElementById('papers-selected').classList.add('active');
+    document.querySelector('#research .tab-nav [data-ref="#papers-selected"]').classList.add('active');
+  }
+</script>

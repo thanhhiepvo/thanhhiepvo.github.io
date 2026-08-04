@@ -1,0 +1,27 @@
+name: "Thanh Hiep Vo"
+title: "B.S. Information Technology · Computer Science"
+email: "thanhhiepvos [AT] gmail.com"
+profile_pic: "/assets/profile-pics/avatar.jpg"
+
+# Social links — leave a value empty ("") to hide that icon.
+github: "https://github.com/thanhhiepvo"
+huggingface: "https://huggingface.co/thanhhiepvos"
+linkedin: ""
+scholar: ""
+
+# Navigation bar. Add or reorder entries here; the navbar renders from this list.
+nav:
+  - label: "Bio"
+    href: "/index.html#bio"
+  - label: "News"
+    href: "/index.html#news"
+  - label: "Research"
+    href: "/index.html#research"
+  - label: "Projects"
+    href: "/index.html#projects"
+  - label: "Open Source"
+    href: "/index.html#opensource"
+  - label: "CV"
+    href: "/index.html#resume"
+  - label: "Skills"
+    href: "/index.html#skills"

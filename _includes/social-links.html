@@ -1,0 +1,21 @@
+{% if site.data.main_info.github and site.data.main_info.github != "" %}
+<a class="social-link" href="{{ site.data.main_info.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+  <i class="fa fa-github" aria-hidden="true"></i>
+</a>
+{% endif %}
+
+{% if site.data.main_info.huggingface and site.data.main_info.huggingface != "" %}
+<a class="social-link" href="{{ site.data.main_info.huggingface }}" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face">HF</a>
+{% endif %}
+
+{% if site.data.main_info.linkedin and site.data.main_info.linkedin != "" %}
+<a class="social-link" href="{{ site.data.main_info.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+</a>
+{% endif %}
+
+{% if site.data.main_info.scholar and site.data.main_info.scholar != "" %}
+<a class="social-link" href="{{ site.data.main_info.scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+  <i class="ai ai-google-scholar" aria-hidden="true"></i>
+</a>
+{% endif %}

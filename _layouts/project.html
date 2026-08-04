@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="docs-section">
+
+  <p class="project-back">
+    <a href="{{ "/index.html#projects" | prepend: site.baseurl }}">&larr; All projects</a>
+  </p>
+
+  {% if page.subtitle == "" or page.subtitle == nil %}
+  	<h3>{{ page.title }}</h3>
+  {% else %}
+    <div class="title-subtitle">
+      <h3>{{ page.title }}</h3>
+      <h5>{{ page.subtitle }}</h5>
+    </div>
+  {% endif %}
+
+  {% if page.github != "" and page.github != nil %}
+    <p class="paper-buttons">
+      <a class="button" href="{{ page.github }}" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-github" aria-hidden="true"></i> Code
+      </a>
+    </p>
+  {% endif %}
+
+  {{ content }}
+
+</div>

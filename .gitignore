@@ -1,6 +1,14 @@
 .DS_Store
 *.swp
 *~
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
 
-# Keep resume local — not published to GitHub Pages
+# Keep resume local — not published
 Resume.pdf
+
+# Local dev tooling (machine-specific paths)
+.claude/

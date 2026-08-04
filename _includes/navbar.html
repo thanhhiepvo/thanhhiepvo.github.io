@@ -1,0 +1,12 @@
+<div class="navbar-spacer"></div>
+<nav class="navbar">
+  <div class="container">
+    <ul class="navbar-list">
+      {% for item in site.data.main_info.nav %}
+      <li class="navbar-item">
+        <a class="navbar-link" href={{ item.href | prepend: site.baseurl }}>{{ item.label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

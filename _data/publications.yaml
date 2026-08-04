@@ -1,4 +1,10 @@
 papers:
+  - id: "CoDiR2026"
+    title: "CoDiR: Confidence-Guided Diffusion Refinement for Semi-Supervised Histopathology Segmentation"
+    authors: "Pham Hoai Nhan, Nguyen Dang Bui, Le-Van Thai, <b>Thanh-Hiep Vo</b>, Dinh Thi Lan Anh, Tien Dat Nguyen, Duy-Dong Nguyen, Ngoc Lam Quang Bui, Tam Tran, Zhi Huang"
+    venue: "MICCAI Workshop COMPAYL, 2026."
+    selected: "y"
+
   - id: "Thesis2026"
     title: "Building Ontology-based Constraints for Large Language Models"
     authors: "<b>Thanh Hiep Vo</b>"
@@ -8,7 +14,7 @@ papers:
   - id: "QUBResearch2025"
     title: "Ontology-guided RAG and PEFT for Domain-specific LLMs"
     authors: "<b>Thanh Hiep Vo</b>"
-    venue: "Research at Queen's University Belfast — ontology-guided prompt engineering, dual-retrieval RAG (Chroma, FAISS), and PEFT (LoRA/adapters) on Llama, Falcon, and Gemma. 2025."
+    venue: "Research at Queen's University Belfast — ontology-guided prompt engineering, dual-retrieval RAG over ontology entities and legal obligations (LangChain, ChromaDB, FAISS), and LoRA/PEFT fine-tuning of decoder-only LLMs. 2025."
     selected: "y"
 
   - id: "Guardrail2025"

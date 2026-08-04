@@ -1,20 +1,24 @@
 ---
 layout: project
 title: "LLM &amp; RAG Pipeline"
-subtitle: "Ontology-guided retrieval with LangChain, Chroma, and FAISS"
+subtitle: "Ontology-guided retrieval with LangChain, ChromaDB, and FAISS"
 selected: "y"
 order: 1
 github: ""
 ---
 
-A retrieval-augmented generation pipeline that uses an ontology to constrain what the
-language model is allowed to assert. Domain concepts and their relations are encoded as
-an ontology, and retrieval is guided by that structure rather than by embedding similarity
-alone.
+An end-to-end retrieval-augmented generation system for the legal domain, built during my
+research at Queen's University Belfast. Rather than relying on embedding similarity alone,
+retrieval is guided by an ontology so that the model's answers stay anchored to the
+concepts and relations the domain actually defines.
 
-**Stack.** LangChain for orchestration, Chroma and FAISS as dual vector stores, and
-ontology-derived constraints applied at the prompt-construction step.
+**Dual retrieval.** Two parallel pipelines built on LangChain, ChromaDB, and FAISS retrieve
+ontology entities and sentence-level legal obligations jointly, so a query surfaces both
+the governing concept and the specific obligation text.
 
-**Related work.** This project grew out of my undergraduate thesis,
-*Building Ontology-based Constraints for Large Language Models*, and my research at
-Queen's University Belfast.
+**Fine-tuning.** Decoder-only LLMs adapted with LoRA and other PEFT methods, evaluated
+across both open- and closed-source models, targeting knowledge representation,
+disambiguation, and reasoning.
+
+**Related work.** This line of work also produced my undergraduate thesis,
+*Building Ontology-based Constraints for Large Language Models*.

@@ -7,10 +7,13 @@ order: 9
 github: ""
 ---
 
-Two statistical modeling exercises implemented without a machine-learning framework.
+Two statistical modeling exercises implemented in pure Python with matrix algebra, without
+a machine-learning framework.
 
-**Linear regression.** A custom ordinary least squares (OLS) solver, deriving the
-coefficients directly rather than calling into an existing estimator.
+**Linear regression.** A custom OLS framework built on Gauss–Jordan inversion, applied to
+the Wine Quality dataset. Adding high-order interaction terms and quadratic feature
+mapping reduced the residual sum of squares by **13%** over the plain linear baseline.
 
-**Markov Chain.** A four-state Markov Chain used to model lifecycle transitions, with the
-transition matrix estimated from observed state changes.
+**Markov Chain.** A four-state stochastic model of long-term infrastructure degradation.
+Iterative state-transition analysis forecast a **46-year facility lifecycle** and
+identified **2046** as the critical rebuild threshold.

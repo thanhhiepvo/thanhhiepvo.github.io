@@ -1,13 +1,39 @@
 <head>
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="{{ site.data.main_info.name }} — Portfolio">
+  <meta name="description" content="{{ site.data.main_info.description }}">
   <meta name="author" content="{{ site.data.main_info.name }}">
-  <meta property="og:title" content="{{ site.data.main_info.name }}" />
+
+  {% comment %} Absolute URLs — link-preview crawlers do not resolve relative paths. {% endcomment %}
+  {% assign og_url = site.url | append: site.baseurl | append: page.url %}
+  {% assign og_img = site.url | append: site.baseurl | append: site.data.main_info.og_image %}
+  {% if page.title and page.title != "Home" %}
+    {% assign og_title = page.title | append: " · " | append: site.data.main_info.name %}
+  {% else %}
+    {% assign og_title = site.data.main_info.name %}
+  {% endif %}
+
+  <link rel="canonical" href="{{ og_url }}" />
+
+  <!-- Open Graph: Facebook, LinkedIn, Zalo, iMessage, Slack, Discord -->
+  <meta property="og:title" content="{{ og_title }}" />
+  <meta property="og:description" content="{{ site.data.main_info.description }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:url" content="{{ og_url }}" />
   <meta property="og:site_name" content="{{ site.data.main_info.name }}" />
-  <link rel="canonical" href="{{ site.url }}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="{{ og_img }}" />
+  <meta property="og:image:secure_url" content="{{ og_img }}" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{{ site.data.main_info.name }} — {{ site.data.main_info.title }}" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ og_title }}" />
+  <meta name="twitter:description" content="{{ site.data.main_info.description }}" />
+  <meta name="twitter:image" content="{{ og_img }}" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 

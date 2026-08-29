@@ -3,6 +3,10 @@ title: "B.S. Information Technology · Computer Science"
 email: "thanhhiepvos [AT] gmail.com"
 profile_pic: "/assets/profile-pics/avatar.jpg"
 
+# Used for <meta description> and for link previews (Open Graph / Twitter cards).
+description: "Machine learning engineer and researcher working on deep learning, large language models, computer vision, and agentic AI systems."
+og_image: "/assets/og-image.jpg"
+
 # Social links — leave a value empty ("") to hide that icon.
 github: "https://github.com/thanhhiepvo"
 huggingface: "https://huggingface.co/thanhhiepvos"

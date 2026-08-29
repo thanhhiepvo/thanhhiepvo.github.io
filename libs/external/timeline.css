@@ -93,6 +93,46 @@
   flex-shrink: 0;
 }
 
+/* Lay the flag and its date on one flex line, flush against the centre line.
+   The original float made the date drop onto its own row whenever the
+   organisation name was long, which (a) re-centred the flag and dragged its
+   node dot off the timeline and (b) pushed that entry's description further
+   down than every other entry's. Flex keeps both on one line instead. */
+.flag-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.direction-l .flag-wrapper {
+  flex-direction: row-reverse;   /* date | flag */
+}
+
+.direction-r .flag-wrapper {
+  flex-direction: row;           /* flag | date */
+}
+
+.direction-l .time-wrapper,
+.direction-r .time-wrapper {
+  float: none;
+  white-space: nowrap;
+}
+
+/* Multiple roles held at the same organisation, stacked under one flag */
+.role-place {
+  margin-bottom: 0.6em;
+}
+
+.role + .role {
+  margin-top: 0.8em;
+}
+
+.role-time {
+  color: rgb(0, 137, 52);
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
 .direction-l .flag {
   -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
@@ -247,6 +287,7 @@
   }
 
   .flag-wrapper {
+    display: inline-block;
     text-align: center;
   }
 

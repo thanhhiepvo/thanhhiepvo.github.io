@@ -3,6 +3,7 @@ layout: project
 title: "Semantic Image Segmentation"
 subtitle: "UNet on Pascal VOC 2012"
 selected: "n"
+published: false
 order: 5
 github: ""
 ---

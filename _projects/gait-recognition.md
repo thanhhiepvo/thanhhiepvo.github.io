@@ -2,8 +2,8 @@
 layout: project
 title: "Gait Recognition"
 subtitle: "GaitGL with local temporal aggregation and global–local feature extraction"
-selected: "n"
-order: 6
+selected: "y"
+order: 2
 github: ""
 ---
 

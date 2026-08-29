@@ -3,6 +3,7 @@ layout: project
 title: "Image Classification Architectures"
 subtitle: "ResNet, Inception, SqueezeNet, and ViT implemented from scratch"
 selected: "y"
+published: false
 order: 3
 github: ""
 ---

@@ -3,6 +3,7 @@ layout: project
 title: "Data Mining Algorithms"
 subtitle: "Apriori, ID3 decision trees, and K-Means in Python and Julia"
 selected: "n"
+published: false
 order: 8
 github: ""
 ---

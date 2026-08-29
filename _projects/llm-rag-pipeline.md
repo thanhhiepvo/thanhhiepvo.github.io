@@ -3,6 +3,7 @@ layout: project
 title: "LLM &amp; RAG Pipeline"
 subtitle: "Ontology-guided retrieval with LangChain, ChromaDB, and FAISS"
 selected: "y"
+published: false
 order: 1
 github: ""
 ---

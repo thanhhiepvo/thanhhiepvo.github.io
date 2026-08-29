@@ -7,8 +7,11 @@ _site/
 .jekyll-metadata
 Gemfile.lock
 
-# Keep resume local — not published
-Resume.pdf
+# Keep the working copy at the repo root local; the published one is assets/cv/Resume.pdf
+/Resume.pdf
+
+# Local preview build
+_local-preview.html
 
 # Local dev tooling (machine-specific paths)
 .claude/

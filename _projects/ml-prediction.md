@@ -3,6 +3,7 @@ layout: project
 title: "Machine Learning Prediction"
 subtitle: "Ordinary least squares regression and Markov Chain lifecycle modeling"
 selected: "n"
+published: false
 order: 9
 github: ""
 ---

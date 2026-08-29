@@ -2,8 +2,8 @@
 layout: project
 title: "Big Data Server"
 subtitle: "Distributed Hadoop cluster with MapReduce and Spark"
-selected: "n"
-order: 7
+selected: "y"
+order: 3
 github: ""
 ---
 

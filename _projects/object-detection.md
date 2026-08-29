@@ -3,7 +3,7 @@ layout: project
 title: "Object Detection for Vietnamese Traffic Signs"
 subtitle: "Faster R-CNN, YOLOv12, FCOS, RetinaNet, and SSD300"
 selected: "y"
-order: 2
+order: 1
 github: ""
 ---
 

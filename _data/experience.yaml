@@ -2,15 +2,19 @@ experiences:
   - place: "VinSmart Future"
     logo: "/assets/logos/vinsmart-future.jpeg"
     time: "Jul 2026 – Present"
-    title: "Machine Learning &amp; Data Mining Engineer"
     subtitle: "Hanoi, Vietnam"
-    advisor: "Do Anh Dung, Dinh Tuan Cuong"
-    advisor_label: "Mentors"
     category: "work"
+    roles:
+      - title: "AI Application Engineer"
+        time: "Sep 2026 – Present"
+      - title: "Machine Learning &amp; Data Mining Engineer"
+        time: "Jul 2026 – Aug 2026"
+        advisor: 'Do Anh Dung, <a href="https://www.linkedin.com/in/tuancuongdinh/" target="_blank" rel="noopener noreferrer">Dinh Tuan Cuong</a>'
+        advisor_label: "Mentors"
 
   - place: "VinUniversity"
     logo: "/assets/logos/VinUniversity.png"
-    time: "May 2026 – Present"
+    time: "May 2026 – Aug 2026"
     title: "Agentic AI Resident"
     subtitle: "Hanoi, Vietnam"
     category: "school"

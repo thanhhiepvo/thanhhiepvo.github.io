@@ -6,7 +6,7 @@
 
   {% comment %} Absolute URLs — link-preview crawlers do not resolve relative paths. {% endcomment %}
   {% assign og_url = site.url | append: site.baseurl | append: page.url %}
-  {% assign og_img = site.url | append: site.baseurl | append: site.data.main_info.og_image %}
+  {% assign og_img = site.url | append: site.baseurl | append: site.data.main_info.og_image | append: "?v=" | append: site.version %}
   {% if page.title and page.title != "Home" %}
     {% assign og_title = page.title | append: " · " | append: site.data.main_info.name %}
   {% else %}

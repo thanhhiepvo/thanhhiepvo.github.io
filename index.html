@@ -65,7 +65,7 @@ title: Home
   <h4>CV</h4>
 
   <p>Experience and education timeline. Full CV in
-     <a href="{{ '/assets/cv/Resume.pdf' | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">PDF</a>.</p>
+     <a href="{{ '/assets/cv/Resume.pdf' | prepend: site.baseurl }}?v={{ site.version }}" target="_blank" rel="noopener noreferrer">PDF</a>.</p>
 
   <ul class="timeline">
     {% for exp in site.data.experience.experiences %}
